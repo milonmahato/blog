@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <!-- Body -->
+    <path d="M100 40 C40 40 30 100 30 150 C30 180 70 190 100 190 C130 190 170 180 170 150 C170 100 160 40 100 40"
+          fill="#00ADD8" />
+
+    <!-- Face -->
+    <circle cx="70" cy="90" r="10" fill="white" /> <!-- Left eye -->
+    <circle cx="130" cy="90" r="10" fill="white" /> <!-- Right eye -->
+    <circle cx="73" cy="92" r="5" fill="black" /> <!-- Left pupil -->
+    <circle cx="133" cy="92" r="5" fill="black" /> <!-- Right pupil -->
+
+    <!-- Nose -->
+    <path d="M90 110 Q100 120 110 110" fill="none" stroke="white" stroke-width="3" />
+
+    <!-- Tech elements -->
+    <path d="M40 70 L60 70 L50 60 L40 70" fill="#ffffff" /> <!-- Left ear circuit -->
+    <path d="M140 70 L160 70 L150 60 L140 70" fill="#ffffff" /> <!-- Right ear circuit -->
+
+    <!-- Binary details -->
+    <text x="85" y="150" fill="white" font-family="monospace" font-size="8">
+        101010
+    </text>
+    <text x="95" y="160" fill="white" font-family="monospace" font-size="8">
+        110011
+    </text>
+
+    <!-- Glasses -->
+    <path d="M60 85 L140 85" stroke="#ffffff" stroke-width="2" fill="none" />
+    <circle cx="70" cy="90" r="15" stroke="#ffffff" stroke-width="2" fill="none" />
+    <circle cx="130" cy="90" r="15" stroke="#ffffff" stroke-width="2" fill="none" />
+
+    <!-- Circuit patterns -->
+    <path d="M30 130 L50 130 L60 140 L80 140" stroke="#ffffff" stroke-width="1" fill="none" />
+    <path d="M170 130 L150 130 L140 140 L120 140" stroke="#ffffff" stroke-width="1" fill="none" />
+</svg>

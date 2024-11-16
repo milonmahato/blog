@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+    <style>
+        @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+        }
+        @keyframes blink {
+        0%, 100% { transform: scaleY(1); }
+        50% { transform: scaleY(0.1); }
+        }
+        @keyframes wave {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(-10deg); }
+        75% { transform: rotate(10deg); }
+        }
+        @keyframes circuit {
+        to { stroke-dashoffset: 0; }
+        }
+        .gopher-body {
+        animation: float 3s ease-in-out infinite;
+        }
+        .eye {
+        animation: blink 3s ease-in-out infinite;
+        transform-origin: center;
+        }
+        .ear {
+        animation: wave 3s ease-in-out infinite;
+        transform-origin: bottom;
+        }
+        .circuit {
+        stroke-dasharray: 100;
+        stroke-dashoffset: 100;
+        animation: circuit 2s linear infinite;
+        }
+    </style>
+
+    <!-- Background Circle -->
+    <circle cx="250" cy="250" r="230" fill="#1E293B" />
+
+    <!-- Decorative Circuit Pattern Background -->
+    <g class="circuit" stroke="#00ADD8" stroke-width="1.5" fill="none" opacity="0.3">
+        <path d="M80 250 Q150 120 250 120 T420 250" />
+        <path d="M80 300 Q150 170 250 170 T420 300" />
+        <path d="M80 350 Q150 220 250 220 T420 350" />
+    </g>
+
+    <!-- Main Gopher Body -->
+    <g class="gopher-body">
+        <!-- Body -->
+        <path d="M250 170 C175 170 160 250 160 310 C160 350 210 360 250 360 C290 360 340 350 340 310 C340 250 325 170 250 170"
+              fill="url(#bodyGradient)" />
+
+        <!-- Face -->
+        <g class="eye">
+            <circle cx="210" cy="235" r="18" fill="white" />
+            <circle cx="290" cy="235" r="18" fill="white" />
+            <circle cx="214" cy="238" r="10" fill="black" />
+            <circle cx="294" cy="238" r="10" fill="black" />
+        </g>
+
+        <!-- Nose -->
+        <path d="M235 260 Q250 270 265 260" stroke="white" stroke-width="5" fill="none" />
+
+        <!-- Ears -->
+        <g class="ear">
+            <path d="M175 210 L200 210 L187 195 L175 210" fill="white" />
+            <path d="M300 210 L325 210 L312 195 L300 210" fill="white" />
+        </g>
+
+        <!-- Glasses -->
+        <g stroke="white" stroke-width="2.5" fill="none">
+            <path d="M200 230 L300 230" />
+            <circle cx="210" cy="235" r="25" />
+            <circle cx="290" cy="235" r="25" />
+        </g>
+    </g>
+
+    <!-- Gradients -->
+    <defs>
+        <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#00ADD8;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#0078A8;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+</svg>
